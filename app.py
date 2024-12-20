@@ -9,7 +9,8 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": [
     "http://localhost",
     "http://localhost:8080",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://lending-club-predict.vercel.app"
 ]}})
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
